@@ -9,6 +9,7 @@ Version: 1.0;*/
   ================================*/
 mainColor = #27ae60
 secondColor = #2ecc71
+grisClaro = #F1F1F1
 
 /*================================
   =          FONTS               =  
@@ -26,6 +27,7 @@ secondColor = #2ecc71
 
 
 body
+	background-color grisClaro
 	font-size 16px
 	margin 0
 img
@@ -38,6 +40,9 @@ video
 .Body	
 	display flex
 	justify-content space-between
+	&--Main
+	&--Aside
+		background-color white
 	&--Main
 		width 68%
 		&Themes
@@ -53,15 +58,17 @@ video
 				height 150px
 				margin 2em 0		
 		&Box
-			background-color red
-			margin .3em
-			height 200px
+			padding .5em
+			margin-bottom 2em
+			&One
+			&Two
+				border 1px dotted black	
 			
-			
-
-	&--Aside	
-		width 28%
+	&--Aside
+		padding .5em	
 		height 300px
+		width 28%
+		max-width 28%	
 		&Message
 			text-align center
     			
@@ -158,24 +165,87 @@ video
 		a
 			color white
 			text-decoration none
-			text-transform uppercase  
+			text-transform uppercase
+
+/*================================
+  =          POSTS BOXS          =  
+  ================================*/
+.PostBox		
+ 	&-Main1
+ 		background-color white
+ 		margin-bottom 2em
+ 		&Image
+ 		&Content
+ 			box-sizing border-box
+ 			display inline-block
+ 			margin-right -4px
+ 			vertical-align top
+ 			width 40%
+ 			
+ 		&Content
+ 			padding-left .5em
+ 			width 60%	
+ 			
+ 	&-Second
+ 		display flex
+ 		flex-wrap wrap 
+ 		&Child
+ 			background-color grisClaro
+ 			margin-bottom .5em
+ 			width 49.5%
+ 			&:nth-child(odd)
+ 				margin-right 1%	
+ 	&-Main2
+ 	&-Second2
+ 		background-color red			
+ 		display inline-block
+ 		margin-right -4px 
+ 		vertical-align top
+ 		width 40%
+ 	&-Second2 
+ 		width 60%		
+
+
+			
+
 /*================================
   =          UTILITIES           =  
   ================================*/			
 .u
+	&-date
+		color #ddd	
+		font-size .8em
+		font-weight bold
+		font-style italic
+		margin 0
+	
+	&-extract
+		color white	
+
+		
 	&-title
 	&-subtitle
-		margin .2em
+		color mainColor
+		margin 0
 		text-transform uppercase	
+	&-title
+		font-size 1.5em
+	&-subtitle
+		font-size 1em
+	&-Middlealign
+		vertical-align middle	
+		
 /*================================
   =          WRAP                =  
   ================================*/
 .Body	
 .Wrap 
+.Wrap2 
 	width 80%
 	margin 0 auto
 	max-width 1200px
-
+.Wrap3
+	background-color white
     	
 
 	  	

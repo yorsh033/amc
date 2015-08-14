@@ -18,6 +18,7 @@ Version: 1.0;*/
   font-style: normal;
 }
 body {
+  background-color: #f1f1f1;
   font-size: 16px;
   margin: 0;
 }
@@ -31,6 +32,10 @@ video {
 .Body {
   display: flex;
   justify-content: space-between;
+}
+.Body--Main,
+.Body--Aside {
+  background-color: #fff;
 }
 .Body--Main {
   width: 68%;
@@ -49,13 +54,18 @@ video {
   margin: 2em 0;
 }
 .Body--MainBox {
-  background-color: #f00;
-  margin: 0.3em;
-  height: 200px;
+  padding: 0.5em;
+  margin-bottom: 2em;
+}
+.Body--MainBoxOne,
+.Body--MainBoxTwo {
+  border: 1px dotted #000;
 }
 .Body--Aside {
-  width: 28%;
+  padding: 0.5em;
   height: 300px;
+  width: 28%;
+  max-width: 28%;
 }
 .Body--AsideMessage {
   text-align: center;
@@ -170,19 +180,85 @@ video {
   text-transform: uppercase;
 }
 /*================================
+  =          POSTS BOXS          =  
+  ================================*/
+.PostBox-Main1 {
+  background-color: #fff;
+  margin-bottom: 2em;
+}
+.PostBox-Main1Image,
+.PostBox-Main1Content {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: -4px;
+  vertical-align: top;
+  width: 40%;
+}
+.PostBox-Main1Content {
+  padding-left: 0.5em;
+  width: 60%;
+}
+.PostBox-Second {
+  display: flex;
+  flex-wrap: wrap;
+}
+.PostBox-SecondChild {
+  background-color: #f1f1f1;
+  margin-bottom: 0.5em;
+  width: 49.5%;
+}
+.PostBox-SecondChild:nth-child(odd) {
+  margin-right: 1%;
+}
+.PostBox-Main2,
+.PostBox-Second2 {
+  background-color: #f00;
+  display: inline-block;
+  margin-right: -4px;
+  vertical-align: top;
+  width: 40%;
+}
+.PostBox-Second2 {
+  width: 60%;
+}
+/*================================
   =          UTILITIES           =  
   ================================*/
+.u-date {
+  color: #ddd;
+  font-size: 0.8em;
+  font-weight: bold;
+  font-style: italic;
+  margin: 0;
+}
+.u-extract {
+  color: #fff;
+}
 .u-title,
 .u-subtitle {
-  margin: 0.2em;
+  color: #27ae60;
+  margin: 0;
   text-transform: uppercase;
+}
+.u-title {
+  font-size: 1.5em;
+}
+.u-subtitle {
+  font-size: 1em;
+}
+.u-Middlealign {
+  vertical-align: middle;
 }
 /*================================
   =          WRAP                =  
   ================================*/
 .Body,
-.Wrap {
+.Wrap,
+.Wrap2 {
   width: 80%;
   margin: 0 auto;
   max-width: 1200px;
+}
+.Wrap3 {
+  background-color: #fff;
 }
