@@ -1,0 +1,175 @@
+/*Theme Name: comacaran 
+Theme URI: http://alcaldiacomacaran.com
+Author:The Compor Team
+Author URI: http://comporsolutions.com 
+Description: Theme Development for Alcaldia comacaran
+Version: 1.0;*/
+/*================================
+  =          VARIABLES           =  
+  ================================*/
+mainColor = #27ae60
+secondColor = #2ecc71
+
+/*================================
+  =          FONTS               =  
+  ================================*/
+@font-face {
+    font-family: 'comacaran';
+    src:url('fonts/comacaran/comacaran.eot?-cse6fv');
+    src:url('fonts/comacaran/comacaran.eot?#iefix-cse6fv') format('embedded-opentype'),
+        url('fonts/comacaran/comacaran.woff?-cse6fv') format('woff'),
+        url('fonts/comacaran/comacaran.ttf?-cse6fv') format('truetype'),
+        url('fonts/comacaran/comacaran.svg?-cse6fv#comacaran') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}  
+
+
+body
+	font-size 16px
+	margin 0
+img
+video
+	max-width 100%	
+	
+/*================================
+  =          PAGE BODY           =  
+  ================================*/
+.Body	
+	display flex
+	justify-content space-between
+	&--Main
+		width 68%
+		&Themes
+			width 100%		
+			display flex
+			justify-content space-between
+			
+			&1
+			&2
+			&3
+				background-color #e74c3c
+				width 30%
+				height 150px
+				margin 2em 0		
+			
+	&--Aside	
+		width 28%
+		height 300px
+		&Message
+			text-align center
+    			
+	
+/*================================
+  =          HEADER              =  
+  ================================*/
+  
+
+.Header 
+	background-color white
+	display flex
+	justify-content space-between
+	max-height 120px
+
+	&--logo
+		flex 1 6 15%
+	&--name
+		display flex
+		align-items center
+		flex-wrap wrap
+		align-content center
+		flex: 3 1 60%;
+		justify-content space-around
+		&Title
+			margin 0
+		&Subtitle
+			margin-bottom 0
+			margin-top 0	
+	&--social
+		align-items center
+		flex 1 6 25%
+		display flex
+		flex-wrap wrap
+		&Box
+			align-self flex-start
+		&Box
+		&SearchBox
+			width 100%
+			text-align right
+			padding 1em 0
+			&Button
+			&Input
+				padding .5em
+				text-transform uppercase	
+			
+			&Button
+				border none
+				background-color #2ecc71
+				color white
+				cursor pointer
+			&Input
+				color #2ecc71
+				border none
+				background-color #EDEDED
+					
+		&SearchBox
+			align-self flex-end
+			
+			
+
+/*================================
+  =          ICONS               =  
+  ================================*/	
+.Icon
+	font-family "comacaran"
+	&-facebook
+	&-youtube
+		font-size 2em
+		color white
+		text-decoration none
+		&:before	
+			padding .3em
+	&-facebook
+		&:before
+			background-color #45619D
+			content: "\e603"
+	&-youtube
+		&:before
+			background-color #CC181E
+			content "\e605"
+/*================================
+  =          NAV                 =  
+  ================================*/
+.Nav
+	background-color mainColor 	
+	margin-bottom 2em
+	&-menu
+		padding 0
+		margin 0
+		li
+			display inline-block
+			padding .5em  				
+		a
+			color white
+			text-decoration none
+			text-transform uppercase  
+/*================================
+  =          UTILITIES           =  
+  ================================*/			
+.u
+	&-title
+	&-subtitle
+		margin .2em
+		text-transform uppercase	
+/*================================
+  =          WRAP                =  
+  ================================*/
+.Body	
+.Wrap 
+	width 80%
+	margin 0 auto
+	max-width 1200px
+
+    	
+
+	  	

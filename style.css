@@ -1,0 +1,183 @@
+/*Theme Name: comacaran 
+Theme URI: http://alcaldiacomacaran.com
+Author:The Compor Team
+Author URI: http://comporsolutions.com 
+Description: Theme Development for Alcaldia comacaran
+Version: 1.0;*/
+/*================================
+  =          VARIABLES           =  
+  ================================*/
+/*================================
+  =          FONTS               =  
+  ================================*/
+@font-face {
+  font-family: 'comacaran';
+  src: url("fonts/comacaran/comacaran.eot?-cse6fv");
+  src: url("fonts/comacaran/comacaran.eot?#iefix-cse6fv") format('embedded-opentype'), url("fonts/comacaran/comacaran.woff?-cse6fv") format('woff'), url("fonts/comacaran/comacaran.ttf?-cse6fv") format('truetype'), url("fonts/comacaran/comacaran.svg?-cse6fv#comacaran") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-size: 16px;
+  margin: 0;
+}
+img,
+video {
+  max-width: 100%;
+}
+/*================================
+  =          PAGE BODY           =  
+  ================================*/
+.Body {
+  display: flex;
+  justify-content: space-between;
+}
+.Body--Main {
+  width: 68%;
+}
+.Body--MainThemes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.Body--MainThemes1,
+.Body--MainThemes2,
+.Body--MainThemes3 {
+  background-color: #e74c3c;
+  width: 30%;
+  height: 150px;
+  margin: 2em 0;
+}
+.Body--Aside {
+  width: 28%;
+  height: 300px;
+}
+.Body--AsideMessage {
+  text-align: center;
+}
+/*================================
+  =          HEADER              =  
+  ================================*/
+.Header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  max-height: 120px;
+}
+.Header--logo {
+  flex: 1 6 15%;
+}
+.Header--name {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  flex: 3 1 60%;
+  justify-content: space-around;
+}
+.Header--nameTitle {
+  margin: 0;
+}
+.Header--nameSubtitle {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.Header--social {
+  align-items: center;
+  flex: 1 6 25%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Header--socialBox {
+  align-self: flex-start;
+}
+.Header--socialBox,
+.Header--socialSearchBox {
+  width: 100%;
+  text-align: right;
+  padding: 1em 0;
+}
+.Header--socialBoxButton,
+.Header--socialSearchBoxButton,
+.Header--socialBoxInput,
+.Header--socialSearchBoxInput {
+  padding: 0.5em;
+  text-transform: uppercase;
+}
+.Header--socialBoxButton,
+.Header--socialSearchBoxButton {
+  border: none;
+  background-color: #2ecc71;
+  color: #fff;
+  cursor: pointer;
+}
+.Header--socialBoxInput,
+.Header--socialSearchBoxInput {
+  color: #2ecc71;
+  border: none;
+  background-color: #ededed;
+}
+.Header--socialSearchBox {
+  align-self: flex-end;
+}
+/*================================
+  =          ICONS               =  
+  ================================*/
+.Icon {
+  font-family: "comacaran";
+}
+.Icon-facebook,
+.Icon-youtube {
+  font-size: 2em;
+  color: #fff;
+  text-decoration: none;
+}
+.Icon-facebook:before,
+.Icon-youtube:before {
+  padding: 0.3em;
+}
+.Icon-facebook:before {
+  background-color: #45619d;
+  content: "\e603";
+}
+.Icon-youtube:before {
+  background-color: #cc181e;
+  content: "\e605";
+}
+/*================================
+  =          NAV                 =  
+  ================================*/
+.Nav {
+  background-color: #27ae60;
+  margin-bottom: 2em;
+}
+.Nav-menu {
+  padding: 0;
+  margin: 0;
+}
+.Nav-menu li {
+  display: inline-block;
+  padding: 0.5em;
+}
+.Nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/*================================
+  =          UTILITIES           =  
+  ================================*/
+.u-title,
+.u-subtitle {
+  margin: 0.2em;
+  text-transform: uppercase;
+}
+/*================================
+  =          WRAP                =  
+  ================================*/
+.Body,
+.Wrap {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
