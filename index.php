@@ -69,7 +69,9 @@
 	<!-- END MAIN THEMES -->
 	<div class="Body">
 		<section class="Body--Main">
-			MAIN CONTENT
+			<div class="Body-MainBox">
+				asdas
+			</div>
 		</section>
 		<aside class="Body--Aside">
 			<div>

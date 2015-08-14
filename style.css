@@ -1,4 +1,4 @@
-/*Theme Name: comacaran 
+/*Theme Name: AMC
 Theme URI: http://alcaldiacomacaran.com
 Author:The Compor Team
 Author URI: http://comporsolutions.com 
@@ -47,6 +47,11 @@ video {
   width: 30%;
   height: 150px;
   margin: 2em 0;
+}
+.Body--MainBox {
+  background-color: #f00;
+  margin: 0.3em;
+  height: 200px;
 }
 .Body--Aside {
   width: 28%;
