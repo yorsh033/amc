@@ -48,21 +48,21 @@
 			</ul>
 		</div>
 	</nav>
-	<div class="Body">
+	<div class="Body u-spacer">
 		<section class="Body--Main">SLIDER</section>
 		<aside class="Body--Aside">
 			<div class="Body--AsideMessage">
 				<figure>
 					<img src="<?php bloginfo('stylesheet_directory');?>/img/alcalde.JPG" width="180" alt=""/>
- 					<figcaption class="u-subtitle">mensaje del alcalde</figcaption>
-					<h2 class="u-title">Sr. Enris Arias</h2>
+ 					<figcaption class="u-subtitle u-mainSubtitle">mensaje del alcalde</figcaption>
+					<h2 class="u-title u-mainTitle">Sr. Enris Arias</h2>
 				</figure>
 			</div>
 		</aside>
 	</div>	
 	<!-- END SLIDER, MENSAJE -->
 
-	<div class="Wrap">	
+	<div class="Wrap u-spacer">	
 		<div class="Body--MainThemes">
 			<div class="Body--MainThemes1">1</div>
 			<div class="Body--MainThemes2">2</div>
@@ -70,7 +70,7 @@
 		</div>
 	</div>
 	<!-- END MAIN THEMES -->
-	<div class="Body">
+	<div class="Body u-spacer">
 		<section class="Body--Main">
 			<div class="Body--MainBox">
 				<div class="Body--MainBoxOne">
@@ -82,9 +82,8 @@
 							<h2 class="u-title">TITULO ENTRADA DESTACADA PRINCIPAL</h2>
 							<p class="u-date">14 Agosto, 2015</p>
 							<div class="u-extract">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam iusto harum, laudantium officia amet aspernatur iste, fugit et aut mollitia provident eum, atque saepe illo commodi. Molestias quam, excepturi enim.	
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum excepturi deserunt perspiciatis asperiores tempora commodi, praesentium, eveniet, nemo animi earum nam, ut. Aliquam nam at voluptas eius alias voluptates, neque.
 							</div>
-
 						</div>
 					</div>
 					<div class="PostBox-Second">
@@ -101,15 +100,7 @@
 							</div>
 							</a>	
 						</div>
-						<div class="PostBox-SecondChild">
-							<h3 class="u-subtitle">Titulo de la entrada</h3>
-						</div>	
-						<div class="PostBox-SecondChild">
-							<h3 class="u-subtitle">Titulo de la entrada</h3>
-						</div>	
-						<div class="PostBox-SecondChild">
-							<h3 class="u-subtitle">Titulo de la entrada</h3>
-						</div>		
+
 					</div>	
 
 				</div>
@@ -118,10 +109,44 @@
 			<div class="Body--MainBox">
 				<div class="Body--MainBoxTwo">
 					<div class="PostBox-Main2">
-						DESTACADO
+						<div class="PostBox-Main2Image">
+							<div class="PostBox-Main2ImageContainer">
+								<img src="<?php bloginfo('stylesheet_directory');?>/img/2.JPG" alt=""/>
+							</div>		
+							<h2 class="u-title">
+								TITULO DE LA ENTRADA
+							</h2>
+							<p class="u-date">14 Agosto, 2015</p>
+							<div class="u-extract">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nesciunt veniam similique tempore animi, minima pariatur, est libero laborum ea accusamus ut suscipit qui consequatur aut. Voluptas quaerat distinctio tempora.</div>
+						</div>
 					</div>
 					<div class="PostBox-Second2">
-						SECUNDARIOS	
+						<div class="PostBox-Second2Child">
+							<a href="#">
+								<div class="u-image">
+									<img src="<?php bloginfo('stylesheet_directory');?>/img/3.JPG" alt="">
+								</div>
+							</a>
+							<div class="u-content">
+								<a href="#">
+									<h3 class="u-subtitle">Titular de la nota</h3>
+								</a>
+									<p class="u-date">15 Agosto, 2015</p>
+							</div>
+						</div>
+						<div class="PostBox-Second2Child">
+							<a href="#">
+								<div class="u-image">
+									<img src="<?php bloginfo('stylesheet_directory');?>/img/3.JPG" alt="">
+								</div>
+							</a>
+							<div class="u-content">
+								<a href="#">
+									<h3 class="u-subtitle">Titular de la nota</h3>
+								</a>
+									<p class="u-date">15 Agosto, 2015</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -135,7 +160,12 @@
 	<!-- END MAIN INFO -->
 	<div class="Wrap">
 		<footer class="Footer">
-			ALCALDIA DE COMARACAN - 2015
+			<div class="Body--MainThemes">
+			<div class="Body--MainThemes1">1</div>
+			<div class="Body--MainThemes2">2</div>
+			<div class="Body--MainThemes3">3</div>
+		</div>
+		<p>Alcaldia Municipal de Comacaran 2015</p>
 		</footer>
 	</div>
 </body>

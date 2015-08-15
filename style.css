@@ -17,14 +17,30 @@ Version: 1.0;*/
   font-weight: normal;
   font-style: normal;
 }
+a {
+  text-decoration: none;
+}
 body {
-  background-color: #f1f1f1;
+  background-color: #e74c3c;
   font-size: 16px;
   margin: 0;
 }
 img,
 video {
   max-width: 100%;
+}
+/*================================
+  =          WRAP                =  
+  ================================*/
+.Body,
+.Wrap,
+.Wrap2 {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.Wrap3 {
+  background-color: #fff;
 }
 /*================================
   =          PAGE BODY           =  
@@ -48,18 +64,19 @@ video {
 .Body--MainThemes1,
 .Body--MainThemes2,
 .Body--MainThemes3 {
-  background-color: #e74c3c;
+  border: 1px solid #fff;
   width: 30%;
   height: 150px;
-  margin: 2em 0;
 }
 .Body--MainBox {
   padding: 0.5em;
   margin-bottom: 2em;
+  overflow: hidden;
 }
-.Body--MainBoxOne,
 .Body--MainBoxTwo {
-  border: 1px dotted #000;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
 }
 .Body--Aside {
   padding: 0.5em;
@@ -69,6 +86,12 @@ video {
 }
 .Body--AsideMessage {
   text-align: center;
+}
+/*================================
+  =          UTILITIES           =  
+  ================================*/
+.Footer {
+  background-color: #c0392b;
 }
 /*================================
   =          HEADER              =  
@@ -134,6 +157,8 @@ video {
 }
 .Header--socialSearchBox {
   align-self: flex-end;
+  padding-right: -1em;
+  padding-top: 0;
 }
 /*================================
   =          ICONS               =  
@@ -163,7 +188,7 @@ video {
   =          NAV                 =  
   ================================*/
 .Nav {
-  background-color: #27ae60;
+  background-color: #c0392b;
   margin-bottom: 2em;
 }
 .Nav-menu {
@@ -195,7 +220,6 @@ video {
   width: 40%;
 }
 .PostBox-Main1Content {
-  padding-left: 0.5em;
   width: 60%;
 }
 .PostBox-Second {
@@ -212,14 +236,30 @@ video {
 }
 .PostBox-Main2,
 .PostBox-Second2 {
-  background-color: #f00;
+  box-sizing: border-box;
   display: inline-block;
   margin-right: -4px;
   vertical-align: top;
-  width: 40%;
+  width: 45%;
 }
 .PostBox-Second2 {
-  width: 60%;
+  width: 50%;
+}
+.PostBox-Second2Child {
+  background-color: #f1f1f1;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+}
+.PostBox-Main2 {
+  background-color: #f1f1f1;
+}
+.PostBox-Main2Image {
+  overflow: hidden;
+}
+.PostBox-Main2ImageContainer {
+  position: relative;
+  width: 170%;
+  left: -25%;
 }
 /*================================
   =          UTILITIES           =  
@@ -231,14 +271,38 @@ video {
   font-style: italic;
   margin: 0;
 }
+.u-extract,
+.u-title,
+.u-subtitle,
+.u-date {
+  padding: 0.5em;
+}
 .u-extract {
-  color: #fff;
+  color: #212121;
+}
+.u-content,
+.u-image {
+  box-sizing: border-box;
+  margin-right: -4px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 35%;
+}
+.u-content {
+  width: 65%;
+}
+.u-mainSubtitle,
+.u-mainTitle {
+  padding: 0;
 }
 .u-title,
 .u-subtitle {
-  color: #27ae60;
+  color: #c0392b;
   margin: 0;
   text-transform: uppercase;
+}
+.u-spacer {
+  margin-bottom: 2em;
 }
 .u-title {
   font-size: 1.5em;
@@ -248,17 +312,4 @@ video {
 }
 .u-Middlealign {
   vertical-align: middle;
-}
-/*================================
-  =          WRAP                =  
-  ================================*/
-.Body,
-.Wrap,
-.Wrap2 {
-  width: 80%;
-  margin: 0 auto;
-  max-width: 1200px;
-}
-.Wrap3 {
-  background-color: #fff;
 }

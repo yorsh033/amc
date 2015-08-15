@@ -7,7 +7,7 @@ Version: 1.0;*/
 /*================================
   =          VARIABLES           =  
   ================================*/
-mainColor = #27ae60
+mainColor = #c0392b
 secondColor = #2ecc71
 grisClaro = #F1F1F1
 
@@ -24,15 +24,27 @@ grisClaro = #F1F1F1
     font-weight: normal;
     font-style: normal;
 }  
-
+a
+	text-decoration none
 
 body
-	background-color grisClaro
+	background-color #e74c3c
 	font-size 16px
 	margin 0
 img
 video
 	max-width 100%	
+/*================================
+  =          WRAP                =  
+  ================================*/
+.Body	
+.Wrap 
+.Wrap2 
+	width 80%
+	margin 0 auto
+	max-width 1200px
+.Wrap3
+	background-color white	
 	
 /*================================
   =          PAGE BODY           =  
@@ -40,6 +52,7 @@ video
 .Body	
 	display flex
 	justify-content space-between
+		
 	&--Main
 	&--Aside
 		background-color white
@@ -53,16 +66,18 @@ video
 			&1
 			&2
 			&3
-				background-color #e74c3c
+				border 1px solid white
 				width 30%
 				height 150px
-				margin 2em 0		
+		
 		&Box
 			padding .5em
 			margin-bottom 2em
-			&One
+			overflow hidden
 			&Two
-				border 1px dotted black	
+				display flex
+				justify-content space-between
+				overflow hidden 	
 			
 	&--Aside
 		padding .5em	
@@ -71,8 +86,12 @@ video
 		max-width 28%	
 		&Message
 			text-align center
-    			
-	
+/*================================
+  =          UTILITIES           =  
+  ================================*/	    			
+.Footer
+	background-color mainColor	
+
 /*================================
   =          HEADER              =  
   ================================*/
@@ -127,6 +146,8 @@ video
 					
 		&SearchBox
 			align-self flex-end
+			padding-right -1em
+			padding-top 0
 			
 			
 
@@ -180,10 +201,8 @@ video
  			display inline-block
  			margin-right -4px
  			vertical-align top
- 			width 40%
- 			
+ 			width 40% 			
  		&Content
- 			padding-left .5em
  			width 60%	
  			
  	&-Second
@@ -197,16 +216,25 @@ video
  				margin-right 1%	
  	&-Main2
  	&-Second2
- 		background-color red			
+ 		box-sizing border-box
  		display inline-block
  		margin-right -4px 
  		vertical-align top
- 		width 40%
+ 		width 45%
  	&-Second2 
- 		width 60%		
-
-
-			
+ 		width 50%
+ 		&Child	
+ 			background-color grisClaro
+ 			padding .5em
+ 			margin-bottom .5em
+ 	&-Main2
+ 		background-color grisClaro
+ 		&Image
+ 			overflow hidden
+ 			&Container
+ 				position relative
+ 				width 170%
+ 				left -25%
 
 /*================================
   =          UTILITIES           =  
@@ -218,16 +246,33 @@ video
 		font-weight bold
 		font-style italic
 		margin 0
-	
 	&-extract
-		color white	
-
-		
+	&-title
+	&-subtitle
+	&-date	
+		padding .5em
+				
+	&-extract
+		color #212121
+	&-content	
+	&-image
+		box-sizing border-box
+		margin-right -4px
+		display inline-block
+		vertical-align middle
+		width 35%
+	&-content
+		width 65%
+	&-mainSubtitle
+	&-mainTitle
+		padding 0	
 	&-title
 	&-subtitle
 		color mainColor
 		margin 0
-		text-transform uppercase	
+		text-transform uppercase
+	&-spacer
+		margin-bottom 2em		
 	&-title
 		font-size 1.5em
 	&-subtitle
@@ -235,17 +280,7 @@ video
 	&-Middlealign
 		vertical-align middle	
 		
-/*================================
-  =          WRAP                =  
-  ================================*/
-.Body	
-.Wrap 
-.Wrap2 
-	width 80%
-	margin 0 auto
-	max-width 1200px
-.Wrap3
-	background-color white
+
     	
 
 	  	
